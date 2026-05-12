@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="tiktok-developers-site-verification" content="VF72EZICF2iKlYbY6jFBDr3ktfXYdf07" />
-  <title>LASY Privacy Policy</title>
+  <title>LASY Marketing OS Privacy Policy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="tiktok-developers-site-verification" content="VF72EZICF2iKlYbY6jFBDr3ktfXYdf07" />
   <style>
     body { font-family: system-ui, -apple-system, 'Segoe UI', sans-serif; max-width: 800px; margin: 40px auto; padding: 20px 24px; line-height: 1.7; color: #222; }
     h1 { border-bottom: 2px solid #000; padding-bottom: 8px; }
@@ -18,15 +18,15 @@
 <body>
 
 <h1>Privacy Policy — LASY Marketing OS</h1>
-<p class="meta">Last updated: April 16, 2026<br>
-Effective date: April 16, 2026</p>
+<p class="meta">Last updated: May 9, 2026<br>
+Effective date: May 9, 2026</p>
 
-<p>LASY ("we", "us", "our") operates the LASY Marketing OS application ("Service"), an internal marketing automation system that collects marketing performance data from connected platforms (including TikTok, Instagram, Google Analytics, Coupang, Naver Commerce) and generates daily performance reports and next-day content recommendations through an AI pipeline.</p>
+<p>LASY Marketing OS ("we", "us", "our"), operated by SY COSMETICS CO., LTD., is a marketing automation platform ("Service") that enables D2C beauty brands to manage content posting and performance analytics across connected social platforms (TikTok, Instagram, Google Analytics, Coupang, Naver Commerce). Brand operators authorize their own platform accounts via OAuth, and our system processes data only for the connected, authorized brand accounts.</p>
 
-<p>This Privacy Policy describes how we collect, use, store, and protect the information we access through the TikTok API and other integrated platforms. This Service is used internally by LASY and its authorized personnel only, and processes data from our own brand accounts only.</p>
+<p>This Privacy Policy describes how we collect, use, store, and protect the information we access through the TikTok API and other integrated platforms on behalf of brands that connect to our Service. We process data only for accounts that brand operators have explicitly authorized our app to access.</p>
 
 <h2>1. Information We Collect from TikTok</h2>
-<p>Through the TikTok Login Kit and Content Posting API, with explicit authorization from our brand's TikTok business account, we access and store:</p>
+<p>Through the TikTok Login Kit and Content Posting API, with explicit authorization from a connecting brand's TikTok business account, we access and store:</p>
 <ul>
   <li><strong>Account identifiers</strong>: <code>open_id</code> of the authorizing brand account</li>
   <li><strong>Video metadata</strong>: video id, title, create_time, duration</li>
@@ -37,18 +37,18 @@ Effective date: April 16, 2026</p>
 <p>We do <strong>not</strong> access:</p>
 <ul>
   <li>Private messages or inbox content</li>
-  <li>Personal data of other TikTok users (followers, viewers, commenters) beyond what is publicly visible in our own posts' engagement</li>
+  <li>Personal data of other TikTok users (followers, viewers, commenters) beyond what is publicly visible in engagement on the brand's own posts</li>
   <li>Videos or data from any account other than the one that explicitly authorized our app</li>
 </ul>
 
 <h2>2. How We Use the Information</h2>
 <ul>
-  <li><strong>Performance analysis</strong>: aggregating daily video metrics to generate internal marketing reports</li>
+  <li><strong>Performance analysis</strong>: aggregating daily video metrics to generate per-brand marketing reports</li>
   <li><strong>Content recommendation</strong>: feeding aggregated metrics into our AI pipeline (Anthropic Claude) to recommend next-day content strategy</li>
-  <li><strong>Content publishing</strong>: if the <code>video.publish</code> scope is authorized, publishing approved content on behalf of our brand account</li>
+  <li><strong>Content publishing</strong>: if the <code>video.publish</code> scope is authorized, publishing approved content on behalf of the brand account</li>
 </ul>
 
-<p>We do not sell, rent, or share TikTok-derived data with third parties for advertising or profiling purposes.</p>
+<p>We do not sell, rent, or share TikTok-derived data with third parties for advertising or profiling purposes. Each brand's data is isolated from other brands on the platform.</p>
 
 <h2>3. Third-Party Processing</h2>
 <p>Aggregated performance metrics (numeric summaries, not raw user data) may be sent to:</p>
@@ -61,10 +61,11 @@ Effective date: April 16, 2026</p>
 <div class="box">
   <ul>
     <li><strong>Location</strong>: Google Cloud Platform, BigQuery, region <code>asia-northeast3</code> (Seoul, Republic of Korea)</li>
-    <li><strong>Access tokens</strong>: stored encrypted in n8n Credentials. <code>access_token</code> is refreshed every 20 hours; old tokens are discarded.</li>
+    <li><strong>Access tokens</strong>: stored encrypted in our credentials store. <code>access_token</code> is refreshed every 20 hours; old tokens are discarded.</li>
     <li><strong>Refresh tokens</strong>: stored encrypted for up to 365 days. Upon revocation or expiration, they are deleted within 24 hours.</li>
     <li><strong>Performance data</strong>: retained for up to 24 months to enable year-over-year analysis, then deleted.</li>
     <li><strong>Immediate deletion</strong>: upon app uninstall, authorization revocation, or account closure request, all associated tokens and derived personal identifiers are deleted within 72 hours.</li>
+    <li><strong>Per-brand isolation</strong>: each connected brand's data is logically isolated; one brand cannot access another brand's data.</li>
   </ul>
 </div>
 
@@ -79,8 +80,9 @@ Effective date: April 16, 2026</p>
 <p>We protect stored data using industry-standard measures:</p>
 <ul>
   <li>All tokens encrypted at rest (Google KMS) and in transit (TLS 1.3)</li>
-  <li>Access limited to authorized LASY personnel via SSO and MFA</li>
+  <li>Access limited to authorized platform personnel via SSO and MFA</li>
   <li>BigQuery access controlled via IAM roles with least-privilege principle</li>
+  <li>Per-brand data isolation enforced at query level</li>
   <li>Regular security audits</li>
 </ul>
 
@@ -88,7 +90,7 @@ Effective date: April 16, 2026</p>
 <p>We use TikTok's APIs in compliance with TikTok's Developer Terms of Service and Community Guidelines. We do not store TikTok content beyond what is necessary to provide our Service. We do not attempt to reverse-engineer, scrape, or bypass any technical protections of the TikTok platform.</p>
 
 <h2>8. Children's Privacy</h2>
-<p>Our Service is intended for internal use by LASY personnel only and is not directed to individuals under the age of 14. We do not knowingly collect personal information from children.</p>
+<p>Our Service is intended for use by authorized brand operators only and is not directed to individuals under the age of 14. We do not knowingly collect personal information from children.</p>
 
 <h2>9. International Data Transfer</h2>
 <p>Data is stored in South Korea (asia-northeast3). If data is accessed from other countries by our authorized personnel, it remains subject to this Privacy Policy and applicable Korean data protection laws (PIPA, Personal Information Protection Act).</p>
@@ -100,7 +102,7 @@ Effective date: April 16, 2026</p>
 <p>For questions, data deletion requests, or concerns regarding this Privacy Policy, contact:</p>
 <ul>
   <li><strong>Email</strong>: flyhi4me@gmail.com</li>
-  <li><strong>Company</strong>: LASY</li>
+  <li><strong>Operator</strong>: SY COSMETICS CO., LTD.</li>
   <li><strong>Representative</strong>: 임성현</li>
 </ul>
 
