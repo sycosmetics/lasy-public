@@ -2,111 +2,89 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>LASY Marketing OS Privacy Policy</title>
+  <title>LASY Marketing OS Terms of Service</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="tiktok-developers-site-verification" content="VF72EZICF2iKlYbY6jFBDr3ktfXYdf07" />
   <style>
     body { font-family: system-ui, -apple-system, 'Segoe UI', sans-serif; max-width: 800px; margin: 40px auto; padding: 20px 24px; line-height: 1.7; color: #222; }
     h1 { border-bottom: 2px solid #000; padding-bottom: 8px; }
     h2 { margin-top: 36px; }
-    code { background: #f4f4f4; padding: 2px 6px; border-radius: 4px; }
     .meta { color: #666; font-size: 0.9em; margin-bottom: 32px; }
     ul li { margin: 6px 0; }
-    .box { background: #fafafa; padding: 16px 20px; border-left: 4px solid #333; margin: 20px 0; }
   </style>
 </head>
 <body>
 
-<h1>Privacy Policy — LASY Marketing OS</h1>
+<h1>Terms of Service — LASY Marketing OS</h1>
 <p class="meta">Last updated: May 9, 2026<br>
 Effective date: May 9, 2026</p>
 
-<p>LASY Marketing OS ("we", "us", "our"), operated by SY COSMETICS CO., LTD., is a marketing automation platform ("Service") that enables D2C beauty brands to manage content posting and performance analytics across connected social platforms (TikTok, Instagram, Google Analytics, Coupang, Naver Commerce). Brand operators authorize their own platform accounts via OAuth, and our system processes data only for the connected, authorized brand accounts.</p>
+<p>These Terms of Service ("Terms") govern access to and use of LASY Marketing OS ("Service") operated by SY COSMETICS CO., LTD. ("we", "us", "our"). By using our Service, you ("Brand Operator", "you") agree to be bound by these Terms.</p>
 
-<p>This Privacy Policy describes how we collect, use, store, and protect the information we access through the TikTok API and other integrated platforms on behalf of brands that connect to our Service. We process data only for accounts that brand operators have explicitly authorized our app to access.</p>
-
-<h2>1. Information We Collect from TikTok</h2>
-<p>Through the TikTok Login Kit and Content Posting API, with explicit authorization from a connecting brand's TikTok business account, we access and store:</p>
+<h2>1. Description of Service</h2>
+<p>LASY Marketing OS is a marketing automation platform for D2C beauty brands that:</p>
 <ul>
-  <li><strong>Account identifiers</strong>: <code>open_id</code> of the authorizing brand account</li>
-  <li><strong>Video metadata</strong>: video id, title, create_time, duration</li>
-  <li><strong>Performance metrics</strong>: view_count, like_count, comment_count, share_count</li>
-  <li><strong>Authentication tokens</strong>: access_token and refresh_token, used solely to call TikTok APIs on behalf of the authorizing brand account</li>
+  <li>Collects performance metrics from each connected brand's authorized accounts on integrated platforms (TikTok, Instagram, Google Analytics, Coupang, Naver Commerce)</li>
+  <li>Generates daily performance summaries and content recommendations via an AI pipeline</li>
+  <li>Optionally publishes approved content on authorized brand accounts</li>
 </ul>
 
-<p>We do <strong>not</strong> access:</p>
+<h2>2. Eligibility and Onboarding</h2>
+<p>The Service is available to authorized representatives of D2C brands ("Brand Operators") who:</p>
 <ul>
-  <li>Private messages or inbox content</li>
-  <li>Personal data of other TikTok users (followers, viewers, commenters) beyond what is publicly visible in engagement on the brand's own posts</li>
-  <li>Videos or data from any account other than the one that explicitly authorized our app</li>
+  <li>Have legal authority to manage the brand's social media presence</li>
+  <li>Agree to these Terms and our Privacy Policy</li>
+  <li>Authorize the connection of their brand's platform accounts via OAuth</li>
+</ul>
+<p>To request onboarding, contact us at the email address below. SY COSMETICS CO., LTD., as the platform operator, is also a Brand Operator on our Service (launch customer).</p>
+
+<h2>3. User Responsibilities</h2>
+<ul>
+  <li>Brand Operators must only authorize the Service to access accounts they own or have explicit permission to manage</li>
+  <li>Users must not attempt to circumvent security controls, reverse-engineer the Service, or use it for any unlawful purpose</li>
+  <li>Users must review and approve all AI-generated content before it is published to public platforms</li>
+  <li>Users must maintain the confidentiality of their authentication credentials</li>
+  <li>Users must comply with the terms of service of each connected platform (TikTok, Instagram, etc.)</li>
 </ul>
 
-<h2>2. How We Use the Information</h2>
+<h2>4. Third-Party Platforms</h2>
+<p>The Service integrates with third-party platforms including TikTok, Instagram (Meta), Google Analytics, Coupang, and Naver Commerce. Your use of these platforms through our Service is governed by their respective terms of service and platform policies.</p>
+
+<p>Specifically, use of TikTok data and APIs is subject to:</p>
 <ul>
-  <li><strong>Performance analysis</strong>: aggregating daily video metrics to generate per-brand marketing reports</li>
-  <li><strong>Content recommendation</strong>: feeding aggregated metrics into our AI pipeline (Anthropic Claude) to recommend next-day content strategy</li>
-  <li><strong>Content publishing</strong>: if the <code>video.publish</code> scope is authorized, publishing approved content on behalf of the brand account</li>
+  <li>TikTok Developer Terms of Service</li>
+  <li>TikTok Community Guidelines</li>
+  <li>TikTok API Terms</li>
 </ul>
 
-<p>We do not sell, rent, or share TikTok-derived data with third parties for advertising or profiling purposes. Each brand's data is isolated from other brands on the platform.</p>
+<h2>5. Data Handling</h2>
+<p>Our handling of data, including data obtained from TikTok and other integrated platforms, is described in our <a href="privacy.html">Privacy Policy</a>. Each Brand Operator's data is logically isolated from other Brand Operators on the platform.</p>
 
-<h2>3. Third-Party Processing</h2>
-<p>Aggregated performance metrics (numeric summaries, not raw user data) may be sent to:</p>
-<ul>
-  <li><strong>Anthropic (Claude API)</strong> — for AI-generated daily briefings and content recommendations. Only aggregated numbers and brand-side text are sent; no TikTok user personal data is transmitted.</li>
-  <li><strong>Google BigQuery (asia-northeast3)</strong> — for storage and analytics</li>
-</ul>
+<h2>6. Intellectual Property</h2>
+<p>All content, code, and intellectual property comprising the Service is owned by SY COSMETICS CO., LTD. (operator of LASY Marketing OS). Content published to brand accounts through the Service is owned by the respective Brand Operator and governed by their separate content policies.</p>
 
-<h2>4. Data Storage and Retention</h2>
-<div class="box">
-  <ul>
-    <li><strong>Location</strong>: Google Cloud Platform, BigQuery, region <code>asia-northeast3</code> (Seoul, Republic of Korea)</li>
-    <li><strong>Access tokens</strong>: stored encrypted in our credentials store. <code>access_token</code> is refreshed every 20 hours; old tokens are discarded.</li>
-    <li><strong>Refresh tokens</strong>: stored encrypted for up to 365 days. Upon revocation or expiration, they are deleted within 24 hours.</li>
-    <li><strong>Performance data</strong>: retained for up to 24 months to enable year-over-year analysis, then deleted.</li>
-    <li><strong>Immediate deletion</strong>: upon app uninstall, authorization revocation, or account closure request, all associated tokens and derived personal identifiers are deleted within 72 hours.</li>
-    <li><strong>Per-brand isolation</strong>: each connected brand's data is logically isolated; one brand cannot access another brand's data.</li>
-  </ul>
-</div>
+<h2>7. Disclaimers</h2>
+<p>The Service is provided "AS IS" and "AS AVAILABLE" without warranties of any kind, express or implied. We do not warrant that the Service will be uninterrupted, error-free, or that data from third-party APIs will always be accurate or current.</p>
 
-<h2>5. Your Rights</h2>
-<ul>
-  <li><strong>Revoke access</strong>: you may revoke our app's access at any time from TikTok Settings &rarr; Security &rarr; Manage app permissions.</li>
-  <li><strong>Request data deletion</strong>: email us at the address below, and we will delete all data associated with your authorization within 30 days.</li>
-  <li><strong>Access your data</strong>: you may request a copy of the data we hold linked to your TikTok authorization.</li>
-</ul>
+<h2>8. Limitation of Liability</h2>
+<p>To the maximum extent permitted by applicable law, LASY Marketing OS and SY COSMETICS CO., LTD. shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to the use of the Service.</p>
 
-<h2>6. Security</h2>
-<p>We protect stored data using industry-standard measures:</p>
-<ul>
-  <li>All tokens encrypted at rest (Google KMS) and in transit (TLS 1.3)</li>
-  <li>Access limited to authorized platform personnel via SSO and MFA</li>
-  <li>BigQuery access controlled via IAM roles with least-privilege principle</li>
-  <li>Per-brand data isolation enforced at query level</li>
-  <li>Regular security audits</li>
-</ul>
+<h2>9. Termination</h2>
+<p>We reserve the right to suspend or terminate access to the Service at any time, with or without cause, and with or without notice. Brand Operators may also terminate their account at any time. Upon termination, all associated tokens and derived data will be deleted as described in our Privacy Policy.</p>
 
-<h2>7. Compliance with TikTok Platform Policies</h2>
-<p>We use TikTok's APIs in compliance with TikTok's Developer Terms of Service and Community Guidelines. We do not store TikTok content beyond what is necessary to provide our Service. We do not attempt to reverse-engineer, scrape, or bypass any technical protections of the TikTok platform.</p>
+<h2>10. Changes to Terms</h2>
+<p>We may update these Terms periodically. Continued use of the Service after changes constitutes acceptance of the updated Terms. Material changes will be notified through our support channel.</p>
 
-<h2>8. Children's Privacy</h2>
-<p>Our Service is intended for use by authorized brand operators only and is not directed to individuals under the age of 14. We do not knowingly collect personal information from children.</p>
+<h2>11. Governing Law</h2>
+<p>These Terms are governed by the laws of the Republic of Korea. Any disputes shall be resolved in the courts of Seoul, Republic of Korea.</p>
 
-<h2>9. International Data Transfer</h2>
-<p>Data is stored in South Korea (asia-northeast3). If data is accessed from other countries by our authorized personnel, it remains subject to this Privacy Policy and applicable Korean data protection laws (PIPA, Personal Information Protection Act).</p>
-
-<h2>10. Changes to This Policy</h2>
-<p>We may update this Privacy Policy periodically. Changes will be posted on this page with an updated "Last updated" date. Material changes will be notified through our support channel.</p>
-
-<h2>11. Contact Us</h2>
-<p>For questions, data deletion requests, or concerns regarding this Privacy Policy, contact:</p>
+<h2>12. Contact</h2>
+<p>For questions regarding these Terms, contact:</p>
 <ul>
   <li><strong>Email</strong>: flyhi4me@gmail.com</li>
   <li><strong>Operator</strong>: SY COSMETICS CO., LTD.</li>
   <li><strong>Representative</strong>: 임성현</li>
 </ul>
-
-<p style="margin-top: 48px; color: #999; font-size: 0.85em;">This Privacy Policy is provided in English for TikTok Developer review. A Korean version is available upon request.</p>
 
 </body>
 </html>
